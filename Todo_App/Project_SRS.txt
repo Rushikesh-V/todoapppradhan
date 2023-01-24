@@ -1,0 +1,26 @@
+Schema
+	-Accounts table
+	-Data table
+
+Accounts Table
+	-AccID [primary key, auto] *
+	-Username [varchar(150)] *
+	-Password [varchar(150)] *
+	-Email [varchar(255)] *
+	-Phone [char(15)] 
+	-Status [int] *
+	-Date_Created [datetime] *
+	-Date_Verified [datetime] 
+	-Date_Closed [datetime]
+
+Task Table
+	-Id [primary key, auto] *
+	-AccId [Foreign key] *
+	-TaskItem [varchar(250)] *
+	-TaskStatus [int] *
+	-DateAdded [datetime] *
+	-DateChecked [datetime] 
+	-DateTrash [datetime]
+	-DateDeleted [datetime]
+	
+
